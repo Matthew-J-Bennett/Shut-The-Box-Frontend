@@ -1,0 +1,429 @@
+.App {
+    text-align: center;
+}
+
+
+.App-header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    /*width: 25vw;*/
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%)
+}
+
+.Game {
+    display: inline-block;
+}
+
+.Game h1 {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    color: white;
+    font-size: xxx-large;
+    -webkit-transform: translateY(-50%) translateX(-50%)
+
+}
+
+.BoardContainer {
+    /*width: 700px;*/
+    display: inline-block;
+    clear: both;
+    position: fixed;
+    overflow: hidden;
+    font-size: 2.5vw;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%)
+
+}
+
+.Board {
+    background-color: #1F2041;
+    color: #FFC857;
+    padding: 5px 10px;
+    border-radius: 15px;
+    position: relative;
+    /*clear: both;*/
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.Number {
+    width: 3.2vw;
+    text-align: center;
+    margin: 1vw 0.75vw;
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Num {
+    border-bottom-style: solid;
+    margin: 0;
+}
+
+.NumIndicator {
+    margin: 0;
+
+}
+
+.SelectedNumber {
+    color: grey;
+    cursor: not-allowed;
+
+}
+
+
+.InteractionBoxContainer {
+    background-color: #1F2041;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    border-radius: 45px;
+    padding: 12px 20px;
+    left: 7%;
+    bottom: 50px;
+    /*width: 500px;*/
+    /*-webkit-transform: translateY(-50%)*/
+}
+
+.Dice {
+    clear: both;
+    /*width: 100px;*/
+    display: flex;
+    grid-auto-flow: column;
+    text-align: center;
+    align-self: center;
+    margin-left: 12px;
+    color: #FFC857;
+}
+
+.Dice p {
+    border-style: solid;
+    padding: 4px 10px 5px 10px;
+    margin: 0px 5px 0px 5px;
+    line-height: 1;
+    font-size: xx-large;
+}
+
+
+.ActionBtn {
+    color: white;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.Disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.Disabled:hover {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.Players {
+    width: 200px;
+    color: white;
+    background-color: #1F2041;
+    border-radius: 15px 0 0 15px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    font-size: 17px;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%)
+}
+
+.Players p {
+    margin: 0 0 5px 0;
+    border-bottom-style: solid;
+    border-width: medium;
+}
+
+.IndividualPlayer {
+    /*background-color: green;*/
+    clear: both;
+    width: 180px;
+    display: grid;
+    grid-auto-flow: column;
+
+
+}
+
+.IndividualPlayer p {
+    margin: 0;
+    border-bottom-style: none;
+
+    /*border-style: dashed;*/
+}
+
+.PlayerName {
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.PlayerScore {
+    width: 20px;
+    text-align: center;
+}
+
+
+.StatusMessage {
+    color: white;
+    padding: 10px;
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+.GameCodeContainer {
+    position: fixed;
+    right: 7%;
+    bottom: 75px;
+    margin: 0;
+    background-color: #1F2041;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    display: inline-block;
+}
+
+.GameCodeContainer:hover {
+    cursor: pointer;
+
+}
+
+.GameCodeContainer p {
+    display: inline;
+}
+
+.GameCodeContainer:hover svg {
+    color: #FFC857;
+}
+
+.GameCodeContainer svg {
+    /*display: table-cell;*/
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 25px;
+    /*background-color: yellow;*/
+
+}
+
+
+body {
+    background-color: #6ac2f8;
+
+}
+
+
+.Main-Menu {
+    background-color: #1F2041;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    width: 600px;
+}
+
+.Main-Menu h1 {
+    text-align: center;
+}
+
+.App-header h1 {
+    font-size: xxx-large;
+}
+
+.Main-Menu Button {
+    width: 100%;
+    border-style: none;
+    border-radius: 50px;
+    font-size: large;
+    padding: 10px;
+    background-color: #f868e3;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+Button {
+    border-style: none;
+    border-radius: 50px;
+    font-size: large;
+    padding: 10px;
+    background-color: #f868e3;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+Button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #8051f6;
+    cursor: pointer;
+
+}
+
+Input {
+    text-align: center;
+}
+
+Input:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+Input {
+    width: calc(100% - 40px);
+    font-size: large;
+    border-style: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.PopUpModal {
+    text-align: center;
+    position: fixed;
+    color: white;
+    z-index: 99;
+    width: 400px;
+    /*height: 400px;*/
+    border-radius: 15px;
+    padding-bottom: 15px;
+    background-color: #1F2041;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%)
+}
+
+
+@media screen and (max-width: 950px) {
+    .Main-Menu {
+        width: 80vw;
+    }
+
+    .PopUpModal {
+        width: 80vw;
+    }
+
+    .Game {
+        width: 100%;
+    }
+
+    .Game h1 {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        text-align: center;
+        -webkit-transform: none;
+    }
+
+
+    .BoardContainer {
+        clear: both;
+        position: relative;
+        /*width: fit-content;*/
+        margin-bottom: 10px;
+        font-size: 6vw;
+        top: revert;
+        left: 50%;
+        transform: none;
+        -webkit-transform: translateX(-50%);
+    }
+
+    .Number {
+        width: 7.5vw;
+        border-width: 2px;
+        margin: 5px 3px;
+    }
+
+    .Num {
+        border-width: 2px;
+    }
+
+    .InteractionBoxContainer {
+        clear: both;
+        position: relative;
+        max-width: 250px;
+        /*font-size: smaller;*/
+        padding: 10px 0px;
+        border-radius: 15px;
+
+        margin-bottom: 10px;
+
+        bottom: unset;
+        left: 50%;
+        transform: none;
+        -webkit-transform: translateX(-50%);
+    }
+
+    .Dice p {
+
+        font-size: 32px;
+        line-height: 32px;
+        padding: 2px 8px 6px 8px;
+        vertical-align: middle;
+    }
+
+    .StatusMessage {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ActionBtn {
+        margin-left: unset;
+    }
+
+
+    .Players {
+        clear: both;
+        position: relative;
+        border-radius: 15px;
+        font-size: medium;
+        top: unset;
+        left: 50%;
+        transform: none;
+        -webkit-transform: translateX(-50%);
+    }
+
+    .PlayersHeader {
+        text-align: center;
+    }
+
+    .GameCodeContainer {
+        clear: both;
+        position: relative;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        bottom: unset;
+        left: 50%;
+        transform: none;
+        -webkit-transform: translateX(-50%);
+    }
+
+
+}
+
+
+
+
