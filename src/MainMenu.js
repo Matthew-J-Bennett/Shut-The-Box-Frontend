@@ -15,13 +15,28 @@ function HowToPlay() {
 
 
     if (!display) {
-        return (<div><button onClick={() => setDisplay(true)}>How to Play</button></div>);
+        return (<div>
+            <button onClick={() => setDisplay(true)}>How to Play</button>
+        </div>);
     } else {
         return (<div>
             <button>How to Play</button>
-            <div className="PopUpModal HowToPlay">
-                <h1>How to Play</h1>
+            <div className="HowToPlay">
+                <h3>How to Play - Shut The Box</h3>
                 <p>Game Rules:</p>
+                <ol>
+                    <li>Roll the dice and select either the numbers rolled on each dice or the combined number.</li>
+                    <li>If you want to select then individual numbers then they must both be not already selected.</li>
+                    <li>Keep rolling the dice until you can't select any more numbers.</li>
+                    <li>Every number you select gets added to your total score.</li>
+                    <li>The Player with the highest score at the end of all the rounds is the winner.</li>
+                </ol>
+                <p>Help Me!</p>
+                <ul>
+                    <li>You must login on the main menu using a google account to play.</li>
+                    <li>After starting a new game players can join by entering the game code given to them by the player who started the new game</li>
+                    <li>Once a game has started no new players are allowed to join</li>
+                </ul>
                 <button style={{width: "unset"}} onClick={() => setDisplay(false)}>Close</button>
             </div>
         </div>)

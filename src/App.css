@@ -241,6 +241,7 @@ body {
     width: 600px;
 }
 
+
 .Main-Menu h1 {
     text-align: center;
 }
@@ -315,10 +316,55 @@ Input {
     -webkit-transform: translateY(-50%) translateX(-50%)
 }
 
+.HowToPlay {
+    position: fixed;
+    color: white;
+    width: 600px;
+    max-height: 80vh;
+    overflow: scroll;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    background-color: #1F2041;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%)
+}
+
+.HowToPlay p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.HowToPlay ol{
+    margin-top: 2px;
+}
+
+.HowToPlay ul{
+    margin-top: 2px;
+}
+
+.HowToPlay li{
+    text-align: left;
+    font-size: large;
+    margin-right: 20px;
+}
+
+.HowToPlay h3{
+    font-size: x-large;
+}
+
 
 @media screen and (max-width: 950px) {
     .Main-Menu {
         width: 80vw;
+    }
+
+    .HowToPlay{
+        width: 100vw;
     }
 
     .PopUpModal {
